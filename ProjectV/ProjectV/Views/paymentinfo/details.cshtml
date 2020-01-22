@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model groupa4.Models.Paymentinfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.roll)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.roll)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rollid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rollid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.totalammount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.totalammount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Due)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Due)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

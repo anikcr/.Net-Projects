@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ProjectV.Models.Payment
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Mark</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="pyear" class="control-label"></label>
+                <input asp-for="pyear" class="form-control" />
+                <span asp-validation-for="pyear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pmonth" class="control-label"></label>
+                <input asp-for="pmonth" class="form-control" />
+                <span asp-validation-for="pmonth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="studentid" class="control-label"></label>
+                <input asp-for="studentid" class="form-control" />
+                <span asp-validation-for="studentid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rollid" class="control-label"></label>
+                <input asp-for="rollid" class="form-control" />
+                <span asp-validation-for="rollid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ammount" class="control-label"></label>
+                <input asp-for="ammount" class="form-control" />
+                <span asp-validation-for="ammount" class="text-danger"></span>
+            </div>
+            
+              
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

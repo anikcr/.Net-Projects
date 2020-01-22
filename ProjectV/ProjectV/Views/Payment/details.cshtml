@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ProjectV.Models.Payment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pyear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pyear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pmonth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pmonth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.studentid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.studentid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rollid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rollid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ammount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ammount)
+        </dd>
+       
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

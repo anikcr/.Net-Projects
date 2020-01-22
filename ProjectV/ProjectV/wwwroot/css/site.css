@@ -1,0 +1,178 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.wrap {
+	width:980px;
+	margin:0 auto;
+	overflow:hidden;
+	
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background:	none repeat scroll 0 0 #E0E0E0;
+    
+}
+a {
+	text-decoration:none;
+	color:#09F;
+}
+a:hover {
+	text-decoration:underline;
+	color:#09F;
+}
+.content_wrap {
+	width:980px;
+	margin:0 auto;
+	overflow:hidden;
+	padding-bottom:10px;
+	height:auto;
+}
+.head {
+	width:954px;
+	border:1px solid #ccc;
+	height:125px;
+	margin-bottom:10px;
+	padding: 11px;
+	background:	none repeat scroll 0 0 #F4F4F4;
+}
+.menu {
+	background-color:#BDD2FF;
+	width:978px;
+	height:41px;
+}
+.logo {
+	padding:10px;
+	width:300px;
+	float:left;
+}
+.head_menu {
+	padding:5px;
+	width:499px;
+	float:right;
+}
+.content {
+	/*width:783px;*/
+	width:785px;
+	float:right;
+	overflow:hidden;
+	border:1px solid #ccc;
+	padding:10px;
+	background:	none repeat scroll 0 0 #F4F4F4;
+}
+
+.box_wrap {
+	width:162px;
+	padding:3px;
+	border:1px solid #CCC;
+	float:left;
+	margin-left:10px;
+	font-size:12px;
+	
+	margin-bottom:10px;
+}
+
+.box {
+	width:150px;
+	height:150px;
+	padding:5px;
+	border:1px solid #CCC;
+	float:left;
+	font-size:12px;
+	background:#EEE;
+}
+h4 {
+	margin:0;
+	padding:0;
+	font-size:17px;
+}
+.sidebar {
+	width:161px;
+	float:left;
+	border:1px solid #ccc;
+}
+.slide {
+	background-color:#BDD2FF;
+	;
+	width:978px;
+	border:1px solid #ccc;
+	height:250px;
+	margin-bottom:10px;
+}
+.feature {
+	background-color:#BDD2FF;
+	width:978px;
+	border:1px solid #ccc;
+	height:250px;
+	margin-bottom:10px;
+}
+.feature_box {
+	border: 1px solid #ccc;
+	width:310px;
+	height:235px;
+	padding:2px;
+	margin:5px;
+	float:left;
+}
+.hsearch {
+	background-color:#BDD2FF;
+	width:978px;
+	border:1px solid #ccc;
+	height:200px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.search_img {
+	border:1px solid #ccc;
+	width:500px;
+	height:180px;
+	padding:2px;
+	margin:5px;
+	float:left;
+}
+.services {
+	background-color:#BDD2FF;
+	width:978PX;
+	border:1PX solid #CCC;
+	height:200px;
+	margin-bottom:10px;
+}
+.enquery {
+	background-color:#BDD2FF;
+	width:978px;
+	border: 1px solid #ccc;
+	height:255px;
+	margin-bottom:10px;
+}
+.enquery_box {
+	border: 1px solid #ccc;
+	float: left;
+	height: 238px;
+	margin: 5px;
+	padding: 3px;
+	width: 308px;
+}
+.footer {
+	width:958px;
+	border:1px solid #ccc;
+	margin-bottom:10px;
+	height:auto;
+overflow:hidden];
+	padding:10px;
+}
+.submit {
+	float: right;
+	font-size: 25px;
+	height: 38px;
+	width: 102px;
+	color:#000;
+}
+.forum_ucp {
+	background:#DDDDDD;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+
+#formID small {
+    padding-left: 5px;
+}

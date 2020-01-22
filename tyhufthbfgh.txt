@@ -1,0 +1,3 @@
+1.Data Source=DESKTOP-AITI2C2\MSSQLSERVER01;Initial Catalog=AdmissionDb;User ID=piyash
+
+2.Scaffold-DbContext "Server=DESKTOP-AITI2C2\MSSQLSERVER01;Database=AdmissionDb;User ID=piyash;Password=pk;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

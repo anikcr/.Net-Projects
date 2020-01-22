@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ProjectV.Models.admission
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="admission" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthday" class="control-label"></label>
+                <input asp-for="Birthday" class="form-control" />
+                <span asp-validation-for="Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gander" class="control-label"></label>
+                <input asp-for="Gander" class="form-control" />
+                <span asp-validation-for="Gander" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Parmanent_address" class="control-label"></label>
+                <input asp-for="Parmanent_address" class="form-control" />
+                <span asp-validation-for="Parmanent_address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Present_address" class="control-label"></label>
+                <input asp-for="Present_address" class="form-control" />
+                <span asp-validation-for="Present_address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Previous_school" class="control-label"></label>
+                <input asp-for="Previous_school" class="form-control" />
+                <span asp-validation-for="Previous_school" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mother_name" class="control-label"></label>
+                <input asp-for="Mother_name" class="form-control" />
+                <span asp-validation-for="Mother_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mother_phone" class="control-label"></label>
+                <input asp-for="Mother_phone" class="form-control" />
+                <span asp-validation-for="Mother_phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mother_occupation" class="control-label"></label>
+                <input asp-for="Mother_occupation" class="form-control" />
+                <span asp-validation-for="Mother_occupation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Father_name" class="control-label"></label>
+                <input asp-for="Father_name" class="form-control" />
+                <span asp-validation-for="Father_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Father_phone" class="control-label"></label>
+                <input asp-for="Father_phone" class="form-control" />
+                <span asp-validation-for="Father_phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Father_profession" class="control-label"></label>
+                <input asp-for="Father_profession" class="form-control" />
+                <span asp-validation-for="Father_profession" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Father_email" class="control-label"></label>
+                <input asp-for="Father_email" class="form-control" />
+                <span asp-validation-for="Father_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
